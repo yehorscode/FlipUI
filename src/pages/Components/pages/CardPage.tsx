@@ -1,8 +1,15 @@
-import ComponentDoc from '@/components/ComponentDoc';
-import ExampleSection from '@/components/ExampleSection';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import ComponentDoc from "@/components/ComponentDoc";
+import ExampleSection from "@/components/ExampleSection";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function CardPage() {
   const cardExampleCode = `import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
@@ -13,42 +20,55 @@ export function CardExamples() {
   return (
     <div className="space-y-8">
       {/* Basic Card */}
-      <div className="space-y-4">
-        <h3 className="text-lg font-semibold">Basic Card</h3>
-        <Card className="w-[350px]">
-          <CardHeader>
-            <CardTitle>FlipUI Component</CardTitle>
-            <CardDescription>A beautifully designed card component.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>This card uses the FlipUI styling with the characteristic Flipper Zero aesthetic.</p>
-          </CardContent>
-          <CardFooter>
-            <Button>Explore</Button>
-          </CardFooter>
-        </Card>
-      </div>
+      <Card className="w-[350px]">
+            <CardHeader>
+              <CardTitle>FlipUI Component</CardTitle>
+              <CardDescription>A beautifully designed card component.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>This card uses the FlipUI styling with the characteristic Flipper Zero aesthetic.</p>
+            </CardContent>
+            <CardFooter>
+              <Button variant="contrast">Explore</Button>
+            </CardFooter>
+          </Card>
 
       {/* Card with Badge */}
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold">Card with Badge</h3>
         <Card className="w-[350px]">
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle>Premium Feature</CardTitle>
-              <Badge variant="destructive">NEW</Badge>
-            </div>
-            <CardDescription>Enhanced functionality for power users.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Access advanced features with this premium component design.</p>
-          </CardContent>
-          <CardFooter className="flex justify-between">
-            <Button variant="outline">Learn More</Button>
-            <Button>Upgrade</Button>
-          </CardFooter>
-        </Card>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <CardTitle>Premium Feature</CardTitle>
+                <Badge variant="destructive">NEW</Badge>
+              </div>
+              <CardDescription>
+                Enhanced functionality for power users.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Access advanced features with this premium component design.
+              </p>
+            </CardContent>
+            <CardFooter className="flex justify-between">
+              <Button variant="contrastOutline">Learn More</Button>
+              <Button variant={"contrast"}>Upgrade</Button>
+            </CardFooter>
+          </Card>
       </div>
+
+    //  Minimal Card
+          <Card className="w-[350px]">
+            <CardContent className="">
+              <div className="space-y-2">
+                <h3 className="font-semibold">Simple Design</h3>
+                <p className="text-sm text-muted-foreground">
+                  Sometimes less is more. This card focuses on clean, minimal
+                  presentation.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
     </div>
   );
 }`;
@@ -64,10 +84,15 @@ export function CardExamples() {
           <Card className="w-[350px]">
             <CardHeader>
               <CardTitle>FlipUI Component</CardTitle>
-              <CardDescription>A beautifully designed card component.</CardDescription>
+              <CardDescription>
+                A beautifully designed card component.
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>This card uses the FlipUI styling with the characteristic Flipper Zero aesthetic.</p>
+              <p>
+                This card uses the FlipUI styling with the characteristic
+                Flipper Zero aesthetic.
+              </p>
             </CardContent>
             <CardFooter>
               <Button variant="contrast">Explore</Button>
@@ -82,14 +107,18 @@ export function CardExamples() {
                 <CardTitle>Premium Feature</CardTitle>
                 <Badge variant="destructive">NEW</Badge>
               </div>
-              <CardDescription>Enhanced functionality for power users.</CardDescription>
+              <CardDescription>
+                Enhanced functionality for power users.
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <p>Access advanced features with this premium component design.</p>
+              <p>
+                Access advanced features with this premium component design.
+              </p>
             </CardContent>
             <CardFooter className="flex justify-between">
               <Button variant="contrastOutline">Learn More</Button>
-              <Button variant={'contrast'}>Upgrade</Button>
+              <Button variant={"contrast"}>Upgrade</Button>
             </CardFooter>
           </Card>
         </ExampleSection>
@@ -99,7 +128,10 @@ export function CardExamples() {
             <CardContent className="">
               <div className="space-y-2">
                 <h3 className="font-semibold">Simple Design</h3>
-                <p className="text-sm text-muted-foreground">Sometimes less is more. This card focuses on clean, minimal presentation.</p>
+                <p className="text-sm text-muted-foreground">
+                  Sometimes less is more. This card focuses on clean, minimal
+                  presentation.
+                </p>
               </div>
             </CardContent>
           </Card>

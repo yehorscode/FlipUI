@@ -93,7 +93,7 @@
   --secondary: oklch(0% 0 0 / 0.582);
   --secondary-foreground: oklch(100% 0.00011 271.152);
   --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: #da7101;
+  --muted-foreground: #c46704;
   --accent: #EA5417;
   --accent-foreground: oklch(0.21 0.006 285.885);
   --destructive: oklch(0.577 0.245 27.325);
@@ -123,7 +123,7 @@
   --color-flip-lgreen: #A5F4BF;
   --color-flip-blue: #98CEFF;
   --color-flip-brown: #E1BBA6;
-  --color-flip-red: #DC143C;
+  --color-flip-red: #FF928B;
   --color-flip-pink: #FFBEE9;
   --card: var(--color-flip-orange);
   --card-foreground: oklch(0% 0 0);

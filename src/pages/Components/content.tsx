@@ -67,7 +67,9 @@ export default function Content() {
       default:
         return (
           <div className="p-8">
-            <h1 className="text-5xl text-red-500 px-2 py-1">Error: Page not found</h1>
+            <h1 className="text-5xl text-red-500 px-2 py-1">
+              Error: Page not found
+            </h1>
             <span>The requested page does not exist.</span>
           </div>
         );
@@ -81,10 +83,12 @@ export default function Content() {
           isCollapsed ? "w-16 min-w-16" : "w-64 min-w-64"
         } bg-flip-black border-r p-4 overflow-y-auto flex-shrink-0 transition-all duration-300`}
       >
-        <div className="mb-4 flex justify-end">
+        <div className="mb-4 flex">
           <button
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className="text-flip-orange hover:text-flip-black hover:bg-flip-orange p-1 transition-colors"
+            className={`${
+              isCollapsed ? "min-w-full" : "min-w-10"
+            } text-flip-orange hover:text-flip-black hover:bg-flip-orange p-1 transition-colors `}
           >
             {isCollapsed ? "→" : "←"}
           </button>
@@ -140,7 +144,9 @@ export default function Content() {
         )}
       </div>
 
-      <div className="flex-1 overflow-auto max-w-4xl mx-auto">{renderPage()}</div>
+      <div className="flex-1 overflow-auto max-w-4xl mx-auto">
+        {renderPage()}
+      </div>
     </div>
   );
 }
