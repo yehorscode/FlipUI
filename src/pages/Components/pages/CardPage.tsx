@@ -95,7 +95,7 @@ export function CardExamples() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="contrast">Explore</Button>
+              <Button variant="default">Explore</Button>
             </CardFooter>
           </Card>
         </ExampleSection>
@@ -117,8 +117,8 @@ export function CardExamples() {
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="contrastOutline">Learn More</Button>
-              <Button variant={"contrast"}>Upgrade</Button>
+              <Button variant="outline">Learn More</Button>
+              <Button variant={"default"}>Upgrade</Button>
             </CardFooter>
           </Card>
         </ExampleSection>

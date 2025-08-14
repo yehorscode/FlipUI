@@ -32,7 +32,6 @@ export function ButtonExamples() {
           <Button size="lg">Large</Button>
         </div>
       </div>
-
       {/* With Icons */}
       <div className="space-y-4">
         <h3 className="text-lg font-semibold">With Icons</h3>

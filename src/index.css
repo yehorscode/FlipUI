@@ -2,8 +2,8 @@
 @import "tw-animate-css";
 
 @font-face {
-  font-family: 'haxrcorp';
-  src: url('/fonts/haxrcorp-4089.ttf') format('truetype');
+  font-family: "haxrcorp";
+  src: url("/fonts/haxrcorp-4089.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: 'helvb08';
-  src: url('/fonts/helvb08.ttf') format('truetype');
+  font-family: "helvb08";
+  src: url("/fonts/helvb08.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -22,24 +22,23 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Helvb08 main menu and bold font */
-  --font-helvb08: 'helvb08', sans-serif;
-  /* Haxrcorp main text font */
-  --font-haxrcorp: 'haxrcorp', monospace;
-  --color-flip-orange: #FF8200;
+  --font-helvb08: "helvb08", sans-serif;
+
+  --font-haxrcorp: "haxrcorp", monospace;
+  --color-flip-orange: #ff8200;
   --color-flip-black: #000000;
-  --color-flip-green: #2ED832;
+  --color-flip-green: #2ed832;
   --color-flip-yellow: var(--color-flip-yellow);
   --color-flip-lgreen: var(--color-flip-lgreen);
   --color-flip-blue: var(--color-flip-blue);
   --color-flip-brown: var(--color-flip-brown);
   --color-flip-red: var(--color-flip-red);
   --color-flip-pink: var(--color-flip-pink);
-  --radius: 0.5rem;
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius: 0rem;
+  --radius-sm: 0rem;
+  --radius-md: 0rem;
+  --radius-lg: 0rem;
+  --radius-xl: 0rem;
   --color-background: var(--background);
   --color-foreground: var(--default-text-colour);
   --color-card: var(--card);
@@ -74,31 +73,40 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: var(--color-flip-orange);
-  --foreground: var(--color-flip-orange);
+  --radius: 0rem;
+  --color-flip-white: #ffffff;
+  --color-flip-gray-50: #fafafa;
+  --color-flip-gray-100: #f5f5f5;
+  --color-flip-gray-200: #e5e5e5;
+  --color-flip-gray-300: #d4d4d4;
+  --color-flip-gray-800: #1f1f1f;
+  --color-flip-gray-900: #0a0a0a;
+  --color-flip-yellow: #b8860b;
+  --color-flip-lgreen: #228b22;
+  --color-flip-blue: #1e90ff;
+  --color-flip-brown: #8b4513;
+  --color-flip-red: #dc143c;
+  --color-flip-pink: #c71585;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
   --default-text-colour: var(--color-flip-black);
-  --color-flip-yellow: #B8860B;
-  --color-flip-lgreen: #228B22;
-  --color-flip-blue: #1E90FF;
-  --color-flip-brown: #8B4513;
-  --color-flip-red: #DC143C;
-  --color-flip-pink: #C71585;
-  --card: var(--color-flip-black);
+  --card: oklch(99.405% 0.00011 271.152);
   --card-foreground: var(--color-flip-orange);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: var(--color-flip-black);
-  --primary-foreground: var(--color-flip-orange);
-  --secondary: oklch(0% 0 0 / 0.582);
-  --secondary-foreground: oklch(100% 0.00011 271.152);
+  --primary: var(--color-flip-orange);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: #c46704;
-  --accent: #EA5417;
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
   --accent-foreground: oklch(0.21 0.006 285.885);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: var(--color-flip-black);
-  --input: oklch(0.92 0.004 286.32);
+  --destructive-foreground: var(--color-flip-white);
+  --border: var(--color-flip-orange);
+  --border-secondary: var(--color-flip-gray-300);
+  --input: var(--color-flip-orange);
   --ring: oklch(0.705 0.015 286.067);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -117,29 +125,31 @@
 
 .dark {
   --background: oklch(0.141 0.005 285.823);
-  --foreground: var(--color-flip-orange);
+  --foreground: oklch(0.985 0 0);
   --default-text-colour: var(--color-flip-orange);
-  --color-flip-yellow: #FFF493;
-  --color-flip-lgreen: #A5F4BF;
-  --color-flip-blue: #98CEFF;
-  --color-flip-brown: #E1BBA6;
-  --color-flip-red: #FF928B;
-  --color-flip-pink: #FFBEE9;
-  --card: var(--color-flip-orange);
-  --card-foreground: oklch(0% 0 0);
+  --color-flip-yellow: #fff493;
+  --color-flip-lgreen: #a5f4bf;
+  --color-flip-blue: #98ceff;
+  --color-flip-brown: #e1bba6;
+  --color-flip-red: #ff5555;
+  --color-flip-pink: #ffbee9;
+  --card: oklch(20.463% 0.00002 271.152);
+  --card-foreground: var(--color-flip-orange);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
   --primary: var(--color-flip-orange);
-  --primary-foreground: var(--color-flip-black);
-  --secondary: oklch(73.797% 0.18336 54.681 / 0.5);
-  --secondary-foreground: oklch(100% 0.00011 271.152);
+  --primary-foreground: oklch(0.21 0.006 285.885);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(30.118% 0.00003 271.152);
-  --accent: #EA5417;
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: var(--color-flip-orange);
-  --input: transparent border;
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: var(--color-flip-black);
+  --border: oklch(1 0 0 / 10%);
+  --border-secondary: var(--color-flip-orange);
+  --input: var(--color-flip-orange);
   --ring: oklch(0.552 0.016 285.938);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
@@ -158,17 +168,72 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 dark:border-border;
   }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-haxrcorp);
   }
 }
-
-/* Custom animations for moving gradients */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground border border-primary hover:bg-primary/90 transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground border-2 border-secondary hover:bg-secondary/80 transition-colors;
+  }
+  .btn-ghost {
+    @apply bg-transparent text-foreground border border-muted hover:bg-muted transition-colors;
+  }
+  .btn-outline {
+    @apply bg-transparent text-primary border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-colors;
+    border-style: solid !important;
+    border-width: 2px !important;
+  }
+  .card-elevated {
+    @apply bg-card border-2 border-border rounded-none shadow-sm;
+  }
+  .card-active {
+    @apply bg-card border-2 border-primary shadow-md;
+  }
+  .input-field {
+    @apply bg-input border-2 border-border focus:border-ring text-foreground transition-colors;
+  }
+  .text-primary {
+    @apply text-primary;
+  }
+  .text-secondary {
+    @apply text-muted-foreground;
+  }
+  .text-emphasis {
+    @apply text-foreground font-bold;
+  }
+  .surface {
+    @apply bg-card text-card-foreground;
+  }
+  .surface-elevated {
+    @apply bg-popover text-popover-foreground border border-border;
+  }
+  .input {
+    @apply dark:bg-input/40
+  }
+  .tabs {
+    @apply data-[state=active]:bg-flip-orange
+  }
+  
+  [data-slot="tabs-trigger"][data-state="active"] {
+    background-color: var(--color-flip-orange) !important;
+    color: white !important;
+  }
+  
+  .dark [data-slot="tabs-trigger"][data-state="active"] {
+    background-color: var(--color-flip-orange) !important;
+    color: black !important;
+  }
+}
 @keyframes gradient-x {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -177,19 +242,32 @@
 }
 
 @keyframes gradient-rainbow {
-  0% { background-position: 0% 50%; }
-  25% { background-position: 25% 50%; }
-  50% { background-position: 50% 50%; }
-  75% { background-position: 75% 50%; }
-  100% { background-position: 100% 50%; }
-}
+  0% {
+    background-position: 0% 50%;
+  }
 
+  25% {
+    background-position: 25% 50%;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+
+  75% {
+    background-position: 75% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 3s ease infinite;
 }
-
 .animate-gradient-rainbow {
   background-size: 800% 800%;
   animation: gradient-rainbow 8s ease infinite;
 }
+

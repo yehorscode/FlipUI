@@ -12,12 +12,12 @@ export default function ComponentsPage() {
                       Make your app look like a flipper using components that I styled!
                     </span>{" "}
                     <br />
-                    <span className="bg-accent text-flip-black p-1">
+                    <span className="bg-destructive text-secondary p-1">
                       Note!: This page is in no way affiliated with Flipper Devices or
                       any flipper zero accessories.
                     </span>{" "}
                     <br />
-                    <span className="bg-accent text-flip-black p-1">
+                    <span className="bg-destructive text-secondary p-1">
                       Note 2: This page is in no way affiliated with ShadCn/ui team nor
                       its contributors and isnt affiliated with Tailwind
                     </span>

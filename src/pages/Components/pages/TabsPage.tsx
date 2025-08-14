@@ -119,11 +119,11 @@ export function TabsDemo() {
               <CardContent className="grid gap-6">
                 <div className="grid gap-3">
                   <Label htmlFor="tabs-demo-name">Name</Label>
-                  <Input id="tabs-demo-name" defaultValue="Pedro Duarte" />
+                  <Input id="tabs-demo-name" defaultValue="Yehor" />
                 </div>
                 <div className="grid gap-3">
                   <Label htmlFor="tabs-demo-username">Username</Label>
-                  <Input id="tabs-demo-username" defaultValue="@peduarte" />
+                  <Input id="tabs-demo-username" defaultValue="yehorscode" />
                 </div>
               </CardContent>
               <CardFooter>
