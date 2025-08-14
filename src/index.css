@@ -90,7 +90,7 @@
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --default-text-colour: var(--color-flip-black);
-  --card: oklch(99.405% 0.00011 271.152);
+  --card: #f5f5f5;
   --card-foreground: var(--color-flip-orange);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
@@ -133,7 +133,7 @@
   --color-flip-brown: #e1bba6;
   --color-flip-red: #ff5555;
   --color-flip-pink: #ffbee9;
-  --card: oklch(20.463% 0.00002 271.152);
+  --card: #161616;
   --card-foreground: var(--color-flip-orange);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
@@ -147,7 +147,7 @@
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: var(--color-flip-black);
-  --border: oklch(1 0 0 / 10%);
+  --border: var(--color-flip-orange);
   --border-secondary: var(--color-flip-orange);
   --input: var(--color-flip-orange);
   --ring: oklch(0.552 0.016 285.938);
@@ -190,12 +190,6 @@
     border-style: solid !important;
     border-width: 2px !important;
   }
-  .card-elevated {
-    @apply bg-card border-2 border-border rounded-none shadow-sm;
-  }
-  .card-active {
-    @apply bg-card border-2 border-primary shadow-md;
-  }
   .input-field {
     @apply bg-input border-2 border-border focus:border-ring text-foreground transition-colors;
   }
@@ -215,10 +209,15 @@
     @apply bg-popover text-popover-foreground border border-border;
   }
   .input {
-    @apply dark:bg-input/40
+    @apply dark:bg-input/40 bg-input; 
   }
+  
+  [data-slot="input"], [data-slot="textarea"] {
+    background-color: #ff820066 !important; 
+  }
+  
   .tabs {
-    @apply data-[state=active]:bg-flip-orange
+    @apply data-[state=active]:bg-flip-orange;
   }
   
   [data-slot="tabs-trigger"][data-state="active"] {

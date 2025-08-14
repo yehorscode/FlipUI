@@ -9,6 +9,9 @@ import CardPage from "./pages/CardPage";
 import InputPage from "./pages/InputPage";
 import ComponentsPage from "./pages/ComponentsPage";
 import TabsPage from "./pages/TabsPage";
+import AccordionPage from "./pages/AccordionPage";
+import AlertDialogPage from "./pages/AlertDialogPage";
+import AlertPage from "./pages/AlertPage";
 
 export default function Content() {
   const { page } = useParams<{ page: string }>();
@@ -36,6 +39,9 @@ export default function Content() {
     {
       title: "Components",
       items: [
+        { id: "accordion", label: "Accordion" },
+        { id: "alertdialog", label: "Alert Dialog" },
+        { id: "alert", label: "Alert" },
         { id: "button", label: "Button" },
         { id: "card", label: "Card" },
         { id: "input", label: "Input" },
@@ -64,6 +70,12 @@ export default function Content() {
         return <InputPage />;
       case "tabs":
         return <TabsPage />;
+      case "accordion":
+        return <AccordionPage />;
+      case "alertdialog":
+        return <AlertDialogPage />;
+      case "alert":
+        return <AlertPage />;
       default:
         return (
           <div className="p-8">
