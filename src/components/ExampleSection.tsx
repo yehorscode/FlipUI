@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ExampleSectionProps {
   title: string;
@@ -6,15 +6,17 @@ interface ExampleSectionProps {
   className?: string;
 }
 
-export default function ExampleSection({ title, children, className = "" }: ExampleSectionProps) {
+export default function ExampleSection({
+  title,
+  children,
+  className = "",
+}: ExampleSectionProps) {
   return (
     <div className={`space-y-4 ${className}`}>
       <h3 className="text-lg font-semibold text-foreground font-haxrcorp">
         {title}
       </h3>
-      <div className="flex gap-4 items-center flex-wrap">
-        {children}
-      </div>
+      <div className="flex gap-4 items-center flex-wrap">{children}</div>
     </div>
   );
 }

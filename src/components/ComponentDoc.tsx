@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { Copy, Check } from 'lucide-react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import React, { useState } from "react";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import { Copy, Check } from "lucide-react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface ComponentDocProps {
   title: string;
@@ -14,13 +14,13 @@ interface ComponentDocProps {
   className?: string;
 }
 
-export default function ComponentDoc({ 
-  title, 
-  description, 
-  children, 
+export default function ComponentDoc({
+  title,
+  description,
+  children,
   code,
   language = "tsx",
-  className = "" 
+  className = "",
 }: ComponentDocProps) {
   const [copied, setCopied] = useState(false);
 
@@ -30,7 +30,7 @@ export default function ComponentDoc({
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy code:', err);
+      console.error("Failed to copy code:", err);
     }
   };
 
@@ -40,9 +40,7 @@ export default function ComponentDoc({
         <h1 className="text-5xl bg-black dark:bg-flip-orange dark:text-flip-black text-flip-orange w-min mb-4 font-haxrcorp px-2 py-1">
           {title}
         </h1>
-        <p className="text-lg leading-relaxed">
-          {description}
-        </p>
+        <p className="text-lg leading-relaxed">{description}</p>
       </div>
 
       <Tabs defaultValue="preview" className="w-full">
@@ -54,13 +52,13 @@ export default function ComponentDoc({
             Code
           </TabsTrigger>
         </TabsList>
-        
+
         <TabsContent value="preview" className="mt-0">
           <div className="border rounded-lg p-6 bg-background min-h-[200px] flex items-center justify-center">
             {children}
           </div>
         </TabsContent>
-        
+
         <TabsContent value="code" className="mt-0">
           <div className="relative">
             <div className="absolute top-3 right-3 z-10">
@@ -83,9 +81,9 @@ export default function ComponentDoc({
                 style={oneDark}
                 customStyle={{
                   margin: 0,
-                  padding: '1rem',
-                  fontSize: '0.875rem',
-                  lineHeight: '1.5',
+                  padding: "1rem",
+                  fontSize: "0.875rem",
+                  lineHeight: "1.5",
                 }}
                 showLineNumbers={true}
                 wrapLines={true}

@@ -9,9 +9,7 @@ export default function InstallationPage() {
         <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
           <code className="text-green-400">npm install @flipui/components</code>
         </pre>
-        <p className="text-gray-300 mt-4">
-          Or if you prefer yarn:
-        </p>
+        <p className="text-gray-300 mt-4">Or if you prefer yarn:</p>
         <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
           <code className="text-green-400">yarn add @flipui/components</code>
         </pre>

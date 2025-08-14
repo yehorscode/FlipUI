@@ -209,22 +209,23 @@
     @apply bg-popover text-popover-foreground border border-border;
   }
   .input {
-    @apply dark:bg-input/40 bg-input; 
+    @apply dark:bg-input/40 bg-input;
   }
-  
-  [data-slot="input"], [data-slot="textarea"] {
-    background-color: #ff820066 !important; 
+
+  [data-slot="input"],
+  [data-slot="textarea"] {
+    background-color: #ff820066 !important;
   }
-  
+
   .tabs {
     @apply data-[state=active]:bg-flip-orange;
   }
-  
+
   [data-slot="tabs-trigger"][data-state="active"] {
     background-color: var(--color-flip-orange) !important;
     color: white !important;
   }
-  
+
   .dark [data-slot="tabs-trigger"][data-state="active"] {
     background-color: var(--color-flip-orange) !important;
     color: black !important;
@@ -269,4 +270,3 @@
   background-size: 800% 800%;
   animation: gradient-rainbow 8s ease infinite;
 }
-

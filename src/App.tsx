@@ -11,8 +11,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />  
-            <Route path="/components" element={<Navigate to="/components/components" replace />} />
+            <Route index element={<Home />} />
+            <Route
+              path="/components"
+              element={<Navigate to="/components/components" replace />}
+            />
             <Route path="/components/:page" element={<Components />} />
           </Route>
         </Routes>

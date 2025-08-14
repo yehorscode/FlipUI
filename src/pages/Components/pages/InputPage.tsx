@@ -1,9 +1,9 @@
-import ComponentDoc from '@/components/ComponentDoc';
-import ExampleSection from '@/components/ExampleSection';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
+import ComponentDoc from "@/components/ComponentDoc";
+import ExampleSection from "@/components/ExampleSection";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 export default function InputPage() {
   const inputExampleCode = `import { Input } from '@/components/ui/input';
@@ -67,9 +67,9 @@ export function InputExamples() {
           <div className="space-y-4">
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="password">Password</Label>
-              <Input 
-                type="password" 
-                id="password" 
+              <Input
+                type="password"
+                id="password"
                 placeholder="Enter password"
                 aria-invalid="true"
               />
@@ -93,7 +93,11 @@ export function InputExamples() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="email-form">Email</Label>
-              <Input type="email" id="email-form" placeholder="john@example.com" />
+              <Input
+                type="email"
+                id="email-form"
+                placeholder="john@example.com"
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="bio">Bio</Label>

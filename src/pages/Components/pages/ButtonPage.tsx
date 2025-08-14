@@ -1,7 +1,7 @@
-import ComponentDoc from '@/components/ComponentDoc';
-import ExampleSection from '@/components/ExampleSection';
-import { Button } from '@/components/ui/button';
-import { Download, Heart, Settings } from 'lucide-react';
+import ComponentDoc from "@/components/ComponentDoc";
+import ExampleSection from "@/components/ExampleSection";
+import { Button } from "@/components/ui/button";
+import { Download, Heart, Settings } from "lucide-react";
 
 export default function ButtonPage() {
   const buttonExampleCode = `import { Button } from '@/components/ui/button';
