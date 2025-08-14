@@ -9,11 +9,18 @@ export default function Home() {
         </h1>
         <span>For the most part, mostly, if you squint</span>
         <div className="flex flex-col w-50 gap-1 mt-3">
-          <Button className="p-6 text-2xl" link="/components">
+          <Button
+            className="p-6 text-2xl"
+            onClick={() => {
+              window.location.href = "/components";
+            }}
+          >
             See components
           </Button>
           <Button className="p-6 text-2xl">See colors</Button>
-          <Button className="p-6 text-2xl" variant={"outline"}>Seek help</Button>
+          <Button className="p-6 text-2xl" variant={"outline"}>
+            Seek help
+          </Button>
         </div>
       </div>
       <div className="mt-10">
