@@ -1,39 +1,20 @@
 export default function UsagePage() {
   return (
     <div className="p-8 max-w-4xl">
-      <h1 className="text-4xl font-bold text-flip-orange mb-6">Usage</h1>
-      <p className="text-gray-300 mb-6">
-        How to use FlipUI components in your project.
-      </p>
-
-      <div className="space-y-6">
-        <div>
-          <h2 className="text-xl text-flip-orange mb-3">Basic Import</h2>
-          <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
-            <code className="text-green-400">{`import { Button } from '@flipui/components';
-
-function App() {
-  return <Button>Click me</Button>;
-}`}</code>
-          </pre>
-        </div>
-
-        <div>
-          <h2 className="text-xl text-flip-orange mb-3">With Custom Props</h2>
-          <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
-            <code className="text-green-400">{`import { Button, Card } from '@flipui/components';
-
-function MyComponent() {
-  return (
-    <Card>
-      <Button variant="primary" size="lg">
-        Large Button
-      </Button>
-    </Card>
-  );
-}`}</code>
-          </pre>
-        </div>
+      <h1 className="text-5xl bg-black dark:bg-flip-orange dark:text-flip-black text-flip-orange w-min px-2 py-1">
+        Usage
+      </h1>
+      <span>
+        How to use the components
+      </span>{" "}
+      <div className="mt-5">
+        <h3 className="text-4xl">How to add components</h3>
+        <p>To add components you need to add them by their respective name using this command</p>
+        <p className="underline bg-flip-orange text-white dark:text-black hover:font-bold text-3xl">npx shadcn@latest add [name]</p>
+        <p className="my-2">Instead of [name] enter desired component. Example</p>
+        <p className="underline bg-flip-orange text-white dark:text-black hover:font-bold text-3xl">npx shadcn@latest add button</p>
+        <p>Installs a button</p>
+        <p>Or just do npx shadcn@latest add to install a lot</p>
       </div>
     </div>
   );
