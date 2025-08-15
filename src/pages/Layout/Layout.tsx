@@ -24,7 +24,10 @@ export default function Layout() {
             <Link to="/colors">Colors</Link>
           </li>
         </ul>
-        <Button className="ml-auto" onClick={handleThemeChange}>
+        <Button
+          className="ml-auto border-2 border-background"
+          onClick={handleThemeChange}
+        >
           Toggle Theme
         </Button>
       </nav>

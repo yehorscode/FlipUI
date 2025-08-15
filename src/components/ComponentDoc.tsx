@@ -37,7 +37,7 @@ export default function ComponentDoc({
   return (
     <div className={`p-8 max-w-4xl ${className}`}>
       <div className="mb-8">
-        <h1 className="text-5xl bg-black dark:bg-flip-orange dark:text-flip-black text-flip-orange w-min mb-4 font-haxrcorp px-2 py-1">
+        <h1 className="text-5xl bg-black dark:bg-flip-orange dark:text-flip-black text-flip-orange w-fit mb-4 font-haxrcorp px-2 py-1">
           {title}
         </h1>
         <p className="text-lg leading-relaxed">{description}</p>

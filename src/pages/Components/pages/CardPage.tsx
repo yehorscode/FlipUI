@@ -76,7 +76,7 @@ export function CardExamples() {
   return (
     <ComponentDoc
       title="Card"
-      description="A flexible and composable card component built on top of shadcn/ui. Perfect for displaying content in an organized, visually appealing way with the FlipUI aesthetic."
+      description="Displays a card with header, content, and footer"
       code={cardExampleCode}
     >
       <div className="space-y-8 w-full">
