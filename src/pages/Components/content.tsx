@@ -29,7 +29,6 @@ const InputPage = lazy(() => import("./pages/InputPage"));
 const InputOTPPage = lazy(() => import("./pages/InputOTPPage"));
 const InstallationPage = lazy(() => import("./pages/InstallationPage"));
 const LabelPage = lazy(() => import("./pages/LabelPage"));
-const LayoutPage = lazy(() => import("./pages/LayoutPage"));
 const MenubarPage = lazy(() => import("./pages/MenubarPage"));
 const NavigationMenuPage = lazy(() => import("./pages/NavigationMenuPage"));
 const PaginationPage = lazy(() => import("./pages/PaginationPage"));
@@ -74,7 +73,6 @@ const SECTIONS = [
     title: "Other",
     items: [
       { id: "typography", label: "Typography" },
-      { id: "layout", label: "Layout" },
     ],
   },
   {
@@ -161,8 +159,6 @@ const Content = memo(() => {
           return UsagePage;
         case "typography":
           return TypographyPage;
-        case "layout":
-          return LayoutPage;
         case "accordion":
           return AccordionPage;
         case "alert":
