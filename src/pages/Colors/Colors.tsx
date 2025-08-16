@@ -33,7 +33,7 @@ export default function ColorsPage() {
   }, [colorIndex]);
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 p-10">
       <h1
         className="text-5xl w-min px-2 py-1 mb-8 transition-colors duration-300 text-white dark:text-black"
         style={{
