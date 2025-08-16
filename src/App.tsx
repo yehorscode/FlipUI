@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Layout from "./pages/Layout/Layout";
 import Components from "./pages/Components/Components";
 import NotFound from "./pages/NotFound/NotFound";
+import ColorsPage from "./pages/Colors/Colors";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/colors" element={<ColorsPage />} />
             <Route
               path="/components"
               element={<Navigate to="/components/components" replace />}

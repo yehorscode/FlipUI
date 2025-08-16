@@ -113,8 +113,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p>
-                      This card uses the FlipUI styling with the characteristic
-                      Flipper Zero aesthetic.
+                      Cool card
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -243,8 +242,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <p>
-                      This card uses the FlipUI styling with the characteristic
-                      Flipper Zero aesthetic.
+                      Cool card
                     </p>
                   </CardContent>
                   <CardFooter>
