@@ -29,7 +29,11 @@ export function RadioGroupDemo() {
 `;
 
   return (
-    <ComponentDoc title="" description="" code={code}>
+    <ComponentDoc
+      title="Radio Group"
+      description="A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time"
+      code={code}
+    >
       <div className="space-y-8 w-full justify-center flex">
         <RadioGroup defaultValue="comfortable">
           <div className="flex items-center gap-3">

@@ -71,9 +71,7 @@ const SECTIONS = [
   },
   {
     title: "Other",
-    items: [
-      { id: "typography", label: "Typography" },
-    ],
+    items: [{ id: "typography", label: "Typography" }],
   },
   {
     title: "Components",

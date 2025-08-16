@@ -15,7 +15,7 @@ export function TextareaDemo() {
       code={code}
     >
       <div className="space-y-8 w-full justify-center flex">
-        return <Textarea placeholder="Type your message here." />
+        <Textarea placeholder="Type your message here." />
       </div>
     </ComponentDoc>
   );

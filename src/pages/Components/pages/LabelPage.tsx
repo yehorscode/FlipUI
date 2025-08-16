@@ -18,7 +18,13 @@ export function LabelDemo() {
 `;
 
   return (
-    <ComponentDoc title="" description="" code={code}>
+    <ComponentDoc
+      title="Label"
+      description="Previous
+Next
+Renders an accessible label associated with controls"
+      code={code}
+    >
       <div className="space-y-8 w-full justify-center flex">
         <div>
           <div className="flex items-center space-x-2">
