@@ -54,7 +54,7 @@ export default function ColorsPage() {
 
         <div className="flex mt-3">
           <div className="bg-green-500 w-20 align-middle flex items-center justify-center">
-            <span className="text-5xl text-white " style={{ writingMode: "vertical-rl" }}>Crayola</span>
+            <span className="text-5xl text-black " style={{ writingMode: "vertical-rl" }}>Crayola</span>
           </div>
           <div className="">
             {colors.map((color) => (
