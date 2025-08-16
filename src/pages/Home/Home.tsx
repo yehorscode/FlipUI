@@ -40,7 +40,14 @@ export default function Home() {
           >
             See components
           </Button>
-          <Button className="p-6 text-2xl">See colors</Button>
+          <Button
+            className="p-6 text-2xl"
+            onClick={() => {
+              window.location.href = "/colors";
+            }}
+          >
+            See colors
+          </Button>
           <Button className="p-6 text-2xl" variant={"outline"}>
             Seek help
           </Button>
@@ -112,9 +119,7 @@ export default function Home() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p>
-                      Cool card
-                    </p>
+                    <p>Cool card</p>
                   </CardContent>
                   <CardFooter>
                     <Button variant="outline">Explore</Button>
@@ -241,9 +246,7 @@ export default function Home() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p>
-                      Cool card
-                    </p>
+                    <p>Cool card</p>
                   </CardContent>
                   <CardFooter>
                     <Button variant="outline">Explore</Button>
